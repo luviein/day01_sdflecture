@@ -21,7 +21,7 @@ public class App {
         int age = 25;
         System.out.printf("%s is %d years old.\n", name, age);
         // another way System.out.println(name + "is" + age + "years old.");
-
+        
         String input = cons.readLine("What is your hobby? ");
         input = input.trim();
 
@@ -37,6 +37,23 @@ public class App {
         } else {
             System.out.println("You are boring");
 
+        }
+
+        //Slide 18 (Switch Statement)
+
+        switch (input) {
+            case "swim":
+                System.out.println("Your nearest swimming pool is Clementi");
+                break;
+            case "jog":
+                System.out.println("The nearest park is West Coast Park");
+                break;
+            case "cycle":
+                System.out.println("You could cycle along PCN");
+                break;
+            default:
+                System.out.printf("What is this '%s' hobby of yours?", input);
+                break;
         }
     }
 }
